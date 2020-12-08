@@ -1,0 +1,15 @@
+{
+  "name": "newmantests",
+  "version": "1.0.0",
+  "description": "Transmit Service Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.2.1",
+    "newman-reporter-html": "^1.0.5"
+  }
+}
