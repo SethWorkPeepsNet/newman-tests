@@ -188,6 +188,38 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Send Enpoint 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"deviceId\": \"11034991\",\n   \"destinationTopic\": \"faultsClear\",\n   \"isTestMessage\": false,\n   \"payload\": \"Stingo\"\n            \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/application/send",
+					"protocol": "https",
+					"host": [
+						"delta-comms-transmit-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"application",
+						"send"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
