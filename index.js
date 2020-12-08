@@ -4,6 +4,7 @@
 const newman = require('newman');
  
 newman.run({
+    // If running other tests, simply change the line below to the new collection name exported from postman
     collection: 'TranmitService.postman_collection.json',
     reporters:  'html',
         reporter:{

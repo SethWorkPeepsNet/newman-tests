@@ -10,4 +10,6 @@ To run you need
 Assuming you are using Linux (can be WSL as well) after initializing the project simply navigate to the folder that the project resides and type "index.js".  
 All this will do for now is generate an HTML report that will confirm that the tests were run.
 
+If you wish to run different tests that are not related to the transmit service you will have to retrieve a new json collection from postman.  To generate the JSON file, take existing tests and add them to a collection in postman and use the export button.  From there simply add that file to the parent directory
+
 More functionality to come
