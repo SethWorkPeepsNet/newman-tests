@@ -1,18 +1,18 @@
 {
 	"info": {
-		"_postman_id": "dc78c6bf-fb67-4c38-9f7f-da0a7a02ff70",
-		"name": "TranmitService",
+		"_postman_id": "8178f5be-28d8-47e4-bdea-d544d3da9c1a",
+		"name": "TransmitServiceStaging",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Send Endpoint",
+			"name": "Send Enpoint",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n   \"deviceId\": \"11034991\",\n   \"destinationTopic\": \"reboot\",\n   \"isTestMessage\": false,\n   \"payload\": \"{ \\\"delaySeconds\\\" : 45, \\\"clearData\\\" : false, \\\"clearLogs\\\" : false }\"\n            \n\n}",
+					"raw": "{\n   \"deviceId\": \"11035191\",\n   \"destinationTopic\": \"reboot\",\n   \"isTestMessage\": false,\n   \"payload\": \"{ \\\"delaySeconds\\\" : 45, \\\"clearData\\\" : false, \\\"clearLogs\\\" : false }\"\n            \n\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,11 +20,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/application/send",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/application/send",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"
@@ -44,7 +44,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"requestId\": \"5432543\",\n    \"statusTopic\": \"a_topic\",\n    \"requests\": [\n       {\n          \"deviceType\": \"pcg\",\n          \"deviceIds\": [\"1104991\"],\n          \"isTestMessage\": false,\n          \"data\": {\n             \"delaySeconds\": 45\n          }\n       }\n    ]\n}",
+					"raw": "{\n    \"requestId\": \"5432543\",\n    \"statusTopic\": \"a_topic\",\n    \"requests\": [\n       {\n          \"deviceType\": \"pcg\",\n          \"deviceIds\": [\"11035191\"],\n          \"isTestMessage\": false,\n          \"data\": {\n             \"delaySeconds\": 45\n          }\n       }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -52,11 +52,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/command/reboot/device",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/command/reboot/device",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"
@@ -71,7 +71,7 @@
 			"response": []
 		},
 		{
-			"name": "Reboot with DSN enpoint",
+			"name": "Reboot with DSN",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -85,11 +85,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/command/reboot/dsn",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/command/reboot/dsn",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"
@@ -104,13 +104,13 @@
 			"response": []
 		},
 		{
-			"name": "Sorted Device config",
+			"name": "Sorted Device Config",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"requestId\": \"5432543\",\n    \"statusTopic\": \"a_topic\",\n    \"requests\": [\n      {\n    \"deviceType\":\"pcg\",\n    \"deviceIds\": [\"11034991\"],\n    \"isTestMessage\":false,\n    \"data\": {\n        \"modifiedKeys\": [\"fleetHomeIcons\"],\n        \"settingsTemplate\": {\n            \"fleetHomeIcons\": [\n                \"DRIVEWYZE\", \"DRIVER_TRAINING\", \"EDRIVER_LOGS\", \"FAULT_CODES\", \"INBOX\", \"LOAD\", \"INBOX\", \"LOGIN\"\n            ]\n            \n        }\n    }\n}\n    ]\n}",
+					"raw": "{\n    \"requestId\": \"5432543\",\n    \"statusTopic\": \"a_topic\",\n    \"requests\": [\n      {\n    \"deviceType\":\"pcg\",\n    \"deviceIds\": [\"11035191\"],\n    \"isTestMessage\":false,\n    \"data\": {\n        \"modifiedKeys\": [\"fleetHomeIcons\"],\n        \"settingsTemplate\": {\n            \"fleetHomeIcons\": [\n                \"DRIVEWYZE\", \"DRIVER_TRAINING\", \"EDRIVER_LOGS\", \"FAULT_CODES\", \"INBOX\", \"LOAD\", \"INBOX\", \"LOGIN\"\n            ]\n            \n        }\n    }\n}\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -118,11 +118,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/deviceconfig",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/deviceconfig",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"
@@ -141,7 +141,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n   \"deviceIds\": [\"11034991\"],\n   \"isTestMessage\": true,\n   \"data\": {\n       \"modifiedKeys\": [ \"cngFuelCollection\", \"sleepDelay\"],\n       \"settingsTemplate\": {\n           \"sleepDelay\": 10000,\n           \"cngFuelCollection\": false,\n           \"otherProp\": \"value2\",\n           \"someNumber\": 3000\n       }\n   }\n}",
+					"raw": "{\n   \"deviceIds\": [\"11035191\"],\n   \"isTestMessage\": true,\n   \"data\": {\n       \"modifiedKeys\": [ \"cngFuelCollection\", \"sleepDelay\"],\n       \"settingsTemplate\": {\n           \"sleepDelay\": 10000,\n           \"cngFuelCollection\": false,\n           \"otherProp\": \"value2\",\n           \"someNumber\": 3000\n       }\n   }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -149,11 +149,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/deviceconfig/unsorted",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/deviceconfig/unsorted",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"
@@ -173,7 +173,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"deviceIds\": [\"11034991\"],\n    \"deviceType\": \"pcg\",\n    \"isTestMessage\": false,\n    \"data\": {\n       \"commandId\": \"123\",\n        \"command\": \"deviceDiagnostics\",\n        \"parameters\":{\"enabled\":\"true\"}\n        \n       \n    }\n}\n\n",
+					"raw": "{\n    \"deviceIds\": [\"11035191\"],\n    \"deviceType\": \"pcg\",\n    \"isTestMessage\": false,\n    \"data\": {\n       \"commandId\": \"123\",\n        \"command\": \"deviceDiagnostics\",\n        \"parameters\":{\"enabled\":\"true\"}\n        \n       \n    }\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -181,11 +181,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/command/synchronous",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/command/synchronous",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"
@@ -205,19 +205,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n   \"deviceId\": \"11034991\",\n   \"destinationTopic\": \"faultsClear\",\n   \"isTestMessage\": false,\n   \"payload\": \"Stingo\"\n            \n\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"raw": "{\n   \"deviceId\": \"11035191\",\n   \"destinationTopic\": \"faultsClear\",\n   \"isTestMessage\": false,\n   \"payload\": \"Stingo\"\n            \n\n}"
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/application/send",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/application/send",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"
@@ -245,11 +240,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://delta-comms-transmit-service.qa.platform.connectedfleet.io/deviceconfig/shadowupdate",
+					"raw": "https://delta-comms-transmit-service.staging.platform.connectedfleet.io/deviceconfig/shadowupdate",
 					"protocol": "https",
 					"host": [
 						"delta-comms-transmit-service",
-						"qa",
+						"staging",
 						"platform",
 						"connectedfleet",
 						"io"

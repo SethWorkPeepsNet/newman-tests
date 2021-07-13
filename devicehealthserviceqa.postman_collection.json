@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "a2cf136a-94c3-4558-bd69-6e515e9d9386",
+		"name": "devicehealthserviceqa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://device-health-service.qa.platform.connectedfleet.io/connectionhistory/110000001?deviceType=pcg&endTimeMs=154834698000&startTimeMs=1547742180000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-health-service.qa.platform.connectedfleet.io/lastlocation/11034991",
+					"protocol": "https",
+					"host": [
+						"device-health-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"lastlocation",
+						"11034991"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://device-health-service.qa.platform.connectedfleet.io/deviceHealth?",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-health-service.qa.platform.connectedfleet.io?deviceId=pcg11034991",
+					"protocol": "https",
+					"host": [
+						"device-health-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"query": [
+						{
+							"key": "deviceId",
+							"value": "pcg11034991"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://device-health-service.qa.platform.connectedfleet.io?deviceType=pcg",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-health-service.qa.platform.connectedfleet.io?deviceType=pcg",
+					"protocol": "https",
+					"host": [
+						"device-health-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"query": [
+						{
+							"key": "deviceType",
+							"value": "pcg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

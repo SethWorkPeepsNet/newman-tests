@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "8b3d34ef-c42a-4a71-8863-45b44e171e52",
+		"name": "CommsDeviceRegistryStaging",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Request For Pmobile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/by-device-name/pmobile08d92f6f-674f-eac1-849f-79000100002a",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"by-device-name",
+						"pmobile08d92f6f-674f-eac1-849f-79000100002a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request for IOT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/by-device-name/pcg11035191",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"by-device-name",
+						"pcg11035191"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by model code and DSN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/pcg/by-dsn/11035191",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"pcg",
+						"by-dsn",
+						"11035191"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get request for certificate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/pcg/certificate/08d83e01-53f7-0040-359b-7e000100000e",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"pcg",
+						"certificate",
+						"08d83e01-53f7-0040-359b-7e000100000e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get request by DSN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/by-dsn/11035191",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"by-dsn",
+						"11035191"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request Certificate By DSN Only",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/certificate/11035191",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"certificate",
+						"11035191"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request for Application ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/get-application-id",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"get-application-id"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get PMobile information from DSN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.staging.platform.connectedfleet.io/iot-devices/pmobile/11035191",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"staging",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"pmobile",
+						"11035191"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,9 +1,0 @@
-stupid notes
-
-Let's start by creating a function called add that can accept 2 arguments and that returns their sum. 
-function addition(a, b) {
-	return x+y;
-}
-console.log(addition(2,3));
-console.log(addition(-7+40));
-
