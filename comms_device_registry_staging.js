@@ -10,7 +10,7 @@ newman.run({
     reporters:  ['cli-response','json-summary','html'],
         reporter:{
             html: {
-                export: 'comms_device_registry_staging_results.html'
+                export: 'CommsDeviceRegistryStagingResult.html'
             }
         }
 },function(err){

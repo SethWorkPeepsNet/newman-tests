@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "939435bd-7d2e-4dad-8095-71f123554919",
+		"name": "CommsDeviceRegistryQA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Request for PMobile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.qa.platform.connectedfleet.io/iot-devices/by-device-name/pmobile08d92f58-90b5-ba1b-858f-c20001000022",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"by-device-name",
+						"pmobile08d92f58-90b5-ba1b-858f-c20001000022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request for IOT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.qa.platform.connectedfleet.io/iot-devices/by-device-name/pcg11034991",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"by-device-name",
+						"pcg11034991"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by model code and DSN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.qa.platform.connectedfleet.io/iot-devices/pcg/by-dsn/11034991",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"pcg",
+						"by-dsn",
+						"11034991"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get request for certificate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.qa.platform.connectedfleet.io/iot-devices/pcg/certificate/08d84e7e-805d-4544-359b-7e0001000043",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"pcg",
+						"certificate",
+						"08d84e7e-805d-4544-359b-7e0001000043"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get request by DSN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.qa.platform.connectedfleet.io/iot-devices/by-dsn/11034991",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"by-dsn",
+						"11034991"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request Cerftificat by DSN Only",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.qa.platform.connectedfleet.io/iot-devices/certificate/11034991",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"certificate",
+						"11034991"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request for Application ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get PMobile information from DSN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://comms-device-registry.qa.platform.connectedfleet.io/iot-devices/pmobile/11034991",
+					"protocol": "https",
+					"host": [
+						"comms-device-registry",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"iot-devices",
+						"pmobile",
+						"11034991"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

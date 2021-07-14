@@ -11,7 +11,7 @@ newman.run({
     reporters:  ['cli-response','json-summary','html'],
         reporter:{
             html: {
-                export: 'results.html'
+                export: 'DeviceHealthServiceStagingResult.html'
             }
         }
 },function(err){

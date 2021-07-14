@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "0684a11c-806b-4f0e-82e0-e57895ddc078",
+		"name": "DeviceConfigServiceStaging",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "General Query ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/device-config/11035191",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"device-config",
+						"11035191"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Version History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/device-config/11035191/version/history",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"device-config",
+						"11035191",
+						"version",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
