@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "fdb2bc3c-ef3e-41b4-9b44-eef1a2178fc0",
+		"name": "DeviceImportServiceQA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobs",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Executions for Provision Import",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobs/provisionImport/jobexecutions",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobs",
+						"provisionImport",
+						"jobexecutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Instances for Provision Import",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobs/provisionImport/jobinstances",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobs",
+						"provisionImport",
+						"jobinstances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Executions for Provision Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobs/provisionDelete/jobexecutions",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobs",
+						"provisionDelete",
+						"jobexecutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Executions for Yogi Provision Import",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobs/yogiProvisionImport/jobexecutions",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobs",
+						"yogiProvisionImport",
+						"jobexecutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Instances for Provision Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobs/provisionDelete/jobinstances",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobs",
+						"provisionDelete",
+						"jobinstances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Instances for Yogi Provision Import",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobs/yogiProvisionImport/jobinstances",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobs",
+						"yogiProvisionImport",
+						"jobinstances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Job by jobExecutionId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobexecutions/93",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobexecutions",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Job Executsion Using instanceId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/jobinstances/6/jobexecutions",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"jobinstances",
+						"6",
+						"jobexecutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Download From Job Execution ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/download/6",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"download",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Device By Parameters Failure Case",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"devices\" : [ { \n\"dsn\" :\"\",\n\"sku\": \"\",\n \"hardwareId\": \"\",\n \"imei\":  \"\",\n \"iccid\": \"\",\n\"radioType\": \"\",\n \"timestamp\": \"\",\n\"certificate\": \"\" }  \n ]\n }     ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/add-device-params",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"add-device-params"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Deivce By Parameters Failure Case",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"devices\" : [ { \n\"dsn\" :\"\",\n\"sku\": \"\",\n \"hardwareId\": \"\",\n \"imei\":  \"\",\n \"iccid\": \"\",\n\"radioType\": \"\",\n \"timestamp\": \"\",\n\"certificate\": \"\" }  \n ]\n }     ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://device-import-service.qa.platform.connectedfleet.io/device-import/delete-device-params",
+					"protocol": "https",
+					"host": [
+						"device-import-service",
+						"qa",
+						"platform",
+						"connectedfleet",
+						"io"
+					],
+					"path": [
+						"device-import",
+						"delete-device-params"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
